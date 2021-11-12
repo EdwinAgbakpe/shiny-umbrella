@@ -1,1 +1,21 @@
-<p>login-card works!</p>
+<div id="login">
+  <div class="filler-img">
+    <img src="../../assets/images/woman-sitting.jpeg" id="filler-img" alt="filler img" />
+  </div>
+  <div class="content">
+    <img src="../../assets/images/sc-logo.png" id="logo" alt="sc logo"/>
+    <h1>Welcome Back!</h1>
+    <h3>Sign Into Your Account</h3>
+    <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+      <div>
+        <input id="email" type="text" formControlName="email" placeholder="Email Address"/>
+      </div>
+      <div>
+        <input id="password" type="password" fromControlName="password" placeholder="Password"/>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p><a>Forgot password?</a></p>
+    <p class="terms-of-service"><a>Terms Of Service</a></p>
+  </div>
+</div>

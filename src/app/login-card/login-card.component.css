@@ -1,0 +1,82 @@
+div#login{
+  background-color: #f5fbef;
+  color: #1b1725;
+  align-items: center;
+  margin: auto;
+  height: 32rem;
+  width: 45%;
+  border-radius: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0.1rem 0.2rem 1rem #555555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+img#logo {
+  height: 3rem;
+}
+
+img#filler-img {
+  height:100%;
+  border-radius: 3rem 0 0 3rem;
+}
+
+.filler-img {
+  height: 100%;
+}
+
+.content {
+  padding: 2.5rem;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+
+.terms-of-service {
+  position: absolute;
+  bottom: 3rem;
+}
+
+h1, h3 {
+  padding: 0.5rem;
+}
+
+input {
+  box-sizing: border-box;
+  height: 2rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 0.1rem solid  #ccc;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+button {
+  /* height: 2rem; */
+  all: unset;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #4e4e4e;
+  color: #fefefe;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+a {
+  color: #444eee;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #44dfff;
+}
+
+button:hover {
+  background-color: #433e4e;
+}

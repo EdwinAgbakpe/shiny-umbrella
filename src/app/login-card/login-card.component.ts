@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login-card',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginCardComponent implements OnInit {
 
-  constructor() { }
+  signInForm = this.formBuilder.group({
+    email: '',
+    password: ''
+  })
+  constructor(
+    private formBuilder: FormBuilder
+  ){}
+
+  onSubmit (): void {
+    window.alert('Login Attempted');
+    this.signInForm.reset();
+  }
 
   ngOnInit(): void {
   }
