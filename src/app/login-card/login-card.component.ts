@@ -10,7 +10,7 @@ export class LoginCardComponent implements OnInit {
 
   signInForm = this.formBuilder.group({
     email: '',
-    password: ''
+    password: '',
   })
   constructor(
     private formBuilder: FormBuilder
@@ -18,6 +18,7 @@ export class LoginCardComponent implements OnInit {
 
   onSubmit (): void {
     window.alert('Login Attempted');
+    console.warn('Login form submitted', this.signInForm.value);
     this.signInForm.reset();
   }
 
